@@ -1,0 +1,95 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(16, 24px);
+  grid-template-rows: repeat(16, 24px);
+  border-color: #7b7b7b #fff #fff #7b7b7b;
+  border-style: solid;
+  border-width: 4px;
+  margin-top: 16px;
+}
+
+.board_container {
+  border-style: solid;
+  border-width: 4px;
+  border-color: #fff #999 #999 #fff;
+  background: #c2c2c2;
+  padding: 16px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.board_header {
+  border-color: #7b7b7b #fff #fff #7b7b7b;
+  border-style: solid;
+  border-width: 4px;
+  background: silver;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 12px;
+}
+
+.header_nums {
+  display: grid;
+  grid-template-columns: repeat(3, 26px);
+  height: 46px;
+}
+
+.header_nums span {
+  width: 13px;
+  height: 23px;
+  background: url("./minesweeper-sprites_9TPZzv3.png") no-repeat;
+  transform: scale(2);
+  transform-origin: top left;
+}
+
+.cell {
+  width: 16px;
+  height: 16px;
+  background: url("./minesweeper-sprites_9TPZzv3.png") no-repeat;
+  transform: scale(1.5);
+  transform-origin: top left;
+}
+
+.board_smile_container {
+  width: 52px;
+  height: 52px;
+}
+
+.board_smile {
+  width: 26px;
+  height: 26px;
+  background: url("./minesweeper-sprites_9TPZzv3.png") no-repeat;
+  transform: scale(2);
+  transform-origin: top left;
+}
+
+@media (max-width: 425px) {
+  .board {
+    grid-template-columns: repeat(16, 16px);
+    grid-template-rows: repeat(16, 15px);
+    margin-top: 12px;
+  }
+  .board_container {
+    padding: 12px;
+  }
+  .header_nums {
+    grid-template-columns: repeat(3, 13px);
+    height: 23px;
+  }
+  .header_nums span {
+    transform: none;
+  }
+  .cell {
+    transform: none;
+  }
+  .board_smile_container {
+    width: 26px;
+    height: 26px;
+  }
+
+  .board_smile {
+    transform: none;
+  }
+}
