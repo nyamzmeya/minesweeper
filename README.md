@@ -2,13 +2,19 @@
 
 Minesweeper online game.
 
+---
+
 [https://nyamzmeya.github.io/minesweeper/](https://nyamzmeya.github.io/minesweeper/)
 
 ![](https://github.com/nyamzmeya/minesweeper/blob/main/minesweeper-gif.gif)
 
+---
+
 ## Technologies
 - React
 - Typescript
+
+---
 
 ## Setup
 Clone this repo to your desktop and run `npm install` to install all the dependencies.
